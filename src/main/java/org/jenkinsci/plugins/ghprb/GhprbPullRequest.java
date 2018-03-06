@@ -167,9 +167,9 @@ public class GhprbPullRequest {
             LOGGER.log(Level.INFO,
                     "Author of #{0} {1} on {2} not in whitelist!",
                     new Object[] {id, author.getLogin(), reponame});
-            if (!containsComment(pr, getRequestForTestingPhrase())) {
-                repo.addComment(id, GhprbTrigger.getDscp().getRequestForTestingPhrase());
-            }
+//            if (!containsComment(pr, getRequestForTestingPhrase())) {
+//                repo.addComment(id, GhprbTrigger.getDscp().getRequestForTestingPhrase());
+//            }
         }
 
         LOGGER.log(Level.INFO,
